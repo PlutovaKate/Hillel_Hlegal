@@ -22,6 +22,17 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
+.wrap-header-hero {
+  height: 100vh;
+  background-image: url(../../images/h.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin-bottom: 60px;
+
+  border: 1px solid red;
+}
+
 .header {
   width: 100%;
   max-width: 1920px;
@@ -94,6 +105,7 @@ body {
   gap: 15px;
   font-weight: 700;
 }
+
 .button-tab {
   width: 33 px;
   height: 25 px;
@@ -115,9 +127,28 @@ body {
   }
 }
 
-// .round {
-//   background: rgba(230, 230, 240, 1);
-//   width: 6px;
-//   height: 6px;
-//   border-radius: 50%;
-// }
+.main-title {
+  position: absolute;
+  top: 45%;
+  right: 39%;
+
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.scroll {
+  width: 42px;
+  height: 42px;
+  opacity: 0.5;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 90%;
+  right: 50%;
+}
