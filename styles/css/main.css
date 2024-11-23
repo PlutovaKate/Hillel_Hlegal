@@ -136,8 +136,7 @@ body {
 .scroll {
   width: 42px;
   height: 42px;
-  opacity: 0.5;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,4 +150,74 @@ body {
   position: absolute;
   top: 90%;
   right: 50%;
+}
+.scroll__svg {
+  color: rgb(255, 255, 255);
+}
+.scroll:hover {
+  cursor: pointer;
+  border-color: rgba(240, 20, 90, 0.5);
+}
+.scroll:hover svg {
+  color: rgb(240, 20, 90);
+}
+
+.facebook-svg {
+  color: rgb(255, 255, 255);
+}
+.facebook-svg :hover {
+  color: rgb(240, 20, 90);
+}
+
+.section-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0px auto 60px;
+  border: 1px solid red;
+}
+.section-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  padding: 14px 60px 14px 0px;
+  border-right: 4px solid rgba(255, 255, 255, 0.3);
+  text-align: end;
+}
+.section-menu__link {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px;
+  color: rgb(179, 179, 186);
+}
+.section-menu__link:hover {
+  color: rgb(240, 20, 90);
+}
+.section-menu__link_active {
+  background-image: linear-gradient(90.13deg, #ef8080 0.84%, #f0145a 99.96%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.section-menu__descr {
+  width: 100%;
+  max-width: 921px;
+  padding: 73px 0px 73px 60px;
+}
+.section-menu__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.section-menu__text {
+  font-size: 19px;
+  line-height: 30px;
 }/*# sourceMappingURL=main.css.map */
