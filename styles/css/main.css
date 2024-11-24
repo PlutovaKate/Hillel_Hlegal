@@ -340,4 +340,35 @@ body {
   font-size: 14px;
   line-height: 22px;
   color: rgb(179, 179, 186);
+}
+
+.section-clients {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0px 100px;
+  margin-bottom: 60px;
+  border: 1px solid red;
+}
+.section-clients__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: rgb(50, 50, 100);
+}
+.section-clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section-clients__img {
+  width: 429px;
 }/*# sourceMappingURL=main.css.map */
