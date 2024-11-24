@@ -1,0 +1,74 @@
+.section-publications {
+  width: 100%;
+  max-width: 1920px;
+  padding: 30px 160px 0px;
+  background: $bgColor;
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 30px;
+
+    background-image: $gradientColor;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.publications {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+
+  &__item {
+    background: rgba(255, 255, 255, 1);
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $regularColor;
+    margin-bottom: 15px;
+  }
+
+  &__wrap {
+    padding: 30px;
+  }
+
+  &__time {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1px;
+    color: $textColor;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+  }
+
+  &__line {
+    width: 100%;
+    height: 4px;
+    background: $separatorColor;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: rgba(0, 0, 0, 1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

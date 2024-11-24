@@ -1,0 +1,113 @@
+.footer {
+  width: 100%;
+  max-width: 1920px;
+  background: $bgColor;
+  padding: 30px 160px;
+
+  &__line {
+    height: 2px;
+    background: $separatorColor;
+    margin-bottom: 30px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 21px;
+  }
+
+  &__address {
+    color: rgba(50, 50, 100, 1);
+    font-family: Montserrat;
+    line-height: 20px;
+  }
+
+  &__map {
+    position: relative;
+    text-transform: uppercase;
+    color: $regularColor;
+  }
+
+  &__map::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    bottom: 5px;
+    background: $textColor;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  &__contacts {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  &__social:hover &__facebook {
+    color: $accentColor;
+    transition: all 0.5s;
+  }
+
+  &__facebook {
+    color: $regularColor;
+  }
+
+  &__tel {
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 20px;
+
+    color: rgba(70, 70, 110, 1);
+  }
+
+  &__tel::before {
+    content: "";
+    position: absolute;
+    left: 34px;
+    bottom: 11px;
+    background: $textColor;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  &__mail {
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 20px;
+
+    color: $regularColor;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 158px;
+      bottom: 11px;
+      background: $textColor;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      color: $accentColor;
+      transition: all 0.5s;
+    }
+  }
+
+  &__copyright {
+    font-family: Montserrat;
+    line-height: 20px;
+
+    color: $textColor;
+  }
+}

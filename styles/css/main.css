@@ -12,16 +12,6 @@ body {
   width: 100%;
 }
 
-.wrapper {
-  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
-  font-family: Montserrat;
-  font-weight: 400;
-  line-height: 20px;
-  color: rgb(255, 255, 255);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-
 .shadow-dark {
   width: 100%;
   max-width: 1880px;
@@ -40,6 +30,49 @@ body {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   margin: 0 auto 60px;
+}
+
+.scroll {
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 90%;
+  right: 50%;
+}
+.scroll__img {
+  color: rgb(255, 255, 255);
+}
+.scroll:hover {
+  cursor: pointer;
+  border-color: rgba(240, 20, 90, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.scroll:hover .scroll__img {
+  color: rgb(240, 20, 90);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.wrapper {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .wrap-header-hero {
@@ -75,6 +108,9 @@ body {
           align-items: center;
   gap: 18px;
   margin-bottom: 16px;
+}
+.auth-nav__social:hover .facebook-svg {
+  color: rgb(240, 20, 90);
 }
 .auth-nav__list {
   display: -webkit-box;
@@ -175,39 +211,6 @@ body {
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
-}
-
-.scroll {
-  width: 42px;
-  height: 42px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 90%;
-  right: 50%;
-}
-.scroll__img {
-  color: rgb(255, 255, 255);
-}
-.scroll:hover {
-  cursor: pointer;
-  border-color: rgba(240, 20, 90, 0.5);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.scroll:hover .scroll__img {
-  color: rgb(240, 20, 90);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .facebook-svg {
@@ -548,6 +551,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 26px;
+}
+.footer__social:hover .footer__facebook {
+  color: rgb(240, 20, 90);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .footer__facebook {
   color: rgb(36, 163, 255);

@@ -1,0 +1,40 @@
+.section-team {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0px 160px 46px;
+
+  display: flex;
+
+  border: 1px solid red;
+
+  &__member {
+    padding: 30px;
+    background: $bgColor;
+  }
+
+  &__text {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 30px;
+
+    background-image: $gradientColor;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  &__name {
+    font-weight: 700;
+    line-height: 20px;
+    color: $textColor;
+
+    margin-bottom: 6px;
+  }
+
+  &__position {
+    font-size: 14px;
+    line-height: 22px;
+    color: $textColor;
+  }
+}
