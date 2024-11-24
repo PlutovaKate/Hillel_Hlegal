@@ -26,12 +26,28 @@ body {
 
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+}
 
-  box-shadow: 0px 12px 0px rgba(202, 202, 219),
-    0px 24px 0px rgba(231, 231, 242, 1);
+.shadow-dark {
+  width: 100%;
+  max-width: 1880px;
+  height: 10px;
+  background: rgba(202, 202, 219, 1);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 
-  // box-shadow: 0px 20px 0px -10px rgba(202, 202, 219, 1),
-  //   0px 40px 0px -20px rgba(231, 231, 242, 1);
+  margin: 0 auto;
+}
+
+.shadow-light {
+  width: 100%;
+  max-width: 1840px;
+  height: 10px;
+  background: rgba(231, 231, 242, 1);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  margin: 0 auto 60px;
 }
 
 .wrap-header-hero {
@@ -69,45 +85,45 @@ body {
 
   &__address {
     position: relative;
-  }
 
-  &__address::before {
-    content: "";
-    position: absolute;
-    left: -11px;
-    bottom: 7px;
-    background: rgba(230, 230, 240, 1);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      bottom: 7px;
+      background: rgba(230, 230, 240, 1);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
   }
 
   &__tel {
     font-size: 16px;
     font-weight: 700;
     position: relative;
-  }
 
-  &__tel::before {
-    content: "";
-    position: absolute;
-    left: -11px;
-    bottom: 7px;
-    background: rgba(230, 230, 240, 1);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-  }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      bottom: 7px;
+      background: rgba(230, 230, 240, 1);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
 
-  &__tel::after {
-    content: "";
-    position: absolute;
-    right: -11px;
-    bottom: 7px;
-    background: rgba(230, 230, 240, 1);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -11px;
+      bottom: 7px;
+      background: rgba(230, 230, 240, 1);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -116,6 +132,23 @@ body {
   justify-content: flex-end;
   gap: 15px;
   font-weight: 700;
+
+  &__link {
+    padding-bottom: 3px;
+
+    &:hover {
+      border-bottom: 3px solid rgba(255, 255, 255, 1);
+      transition: all 0.5s;
+    }
+
+    &-active {
+      border-bottom: 3px solid rgba(240, 20, 90, 1);
+
+      & > a {
+        color: rgba(240, 20, 90, 1);
+      }
+    }
+  }
 }
 
 .button-tab {
@@ -136,6 +169,11 @@ body {
 
   &_active {
     background: rgba(240, 20, 90, 1);
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s;
   }
 }
 
@@ -163,16 +201,18 @@ body {
   top: 90%;
   right: 50%;
 
-  &__svg {
+  &__img {
     color: rgba(255, 255, 255, 1);
   }
 
   &:hover {
     cursor: pointer;
     border-color: rgba(240, 20, 90, 0.5);
+    transition: all 0.5s;
 
-    svg {
+    .scroll__img {
       color: rgba(240, 20, 90, 1);
+      transition: all 0.5s;
     }
   }
 }
@@ -182,6 +222,7 @@ body {
 
   :hover {
     color: rgba(240, 20, 90, 1);
+    transition: all 0.5s;
   }
 }
 
@@ -212,6 +253,7 @@ body {
 
     &:hover {
       color: rgba(240, 20, 90, 1);
+      transition: all 0.5s;
     }
 
     &_active {
@@ -250,7 +292,7 @@ body {
   width: 100%;
   max-width: 1920px;
   padding: 0px 160px 60px;
-  margin: 0px auto 60px;
+  margin: 0px auto;
 
   border: 1px solid red;
 
@@ -323,9 +365,11 @@ body {
 
   &:hover {
     color: rgba(240, 20, 90, 1);
+    transition: all 0.5s;
 
     .menu-link__arrow {
       color: rgba(240, 20, 90, 1);
+      transition: all 0.5s;
     }
   }
 
@@ -509,7 +553,6 @@ body {
     color: rgba(50, 50, 100, 1);
     font-family: Montserrat;
     line-height: 20px;
-    text-align: left;
   }
 
   &__map {
@@ -552,30 +595,35 @@ body {
     content: "";
     position: absolute;
     left: 34px;
-    bottom: 10px;
+    bottom: 11px;
     background: rgba(179, 179, 186, 1);
     width: 6px;
     height: 6px;
     border-radius: 50%;
   }
 
-  &__address {
+  &__mail {
     font-family: Montserrat;
     font-weight: 700;
     line-height: 20px;
 
     color: rgba(36, 163, 255, 1);
-  }
 
-  &__address::before {
-    content: "";
-    position: absolute;
-    left: 158px;
-    bottom: 10px;
-    background: rgba(179, 179, 186, 1);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 158px;
+      bottom: 11px;
+      background: rgba(179, 179, 186, 1);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      color: rgba(240, 20, 90, 1);
+      transition: all 0.5s;
+    }
   }
 
   &__copyright {
