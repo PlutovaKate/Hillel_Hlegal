@@ -18,6 +18,11 @@
     padding: 0px 60px 46px;
   }
 
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+    flex-direction: column;
+  }
+
   &__menu-link {
     @media screen and (max-width: 1024px) {
       margin-bottom: 5px;

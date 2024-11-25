@@ -15,6 +15,10 @@
     max-width: 1024px;
   }
 
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+  }
+
   &__title {
     font-size: 38px;
     font-weight: 700;
@@ -31,6 +35,11 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 1024px) {
+      justify-content: space-between;
+      gap: 60px;
+    }
   }
 
   &__item {
@@ -52,6 +61,11 @@
 
     @media screen and (max-width: 1024px) {
       width: 260px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 293px;
+      margin: 0px;
     }
 
     border: 1px solid red;

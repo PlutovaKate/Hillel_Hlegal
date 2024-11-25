@@ -23,6 +23,10 @@
   background-position: 50%;
   margin-bottom: 60px;
 
+  @media screen and (max-width: 768px) {
+    background-size: cover;
+  }
+
   border: 1px solid red;
 }
 
@@ -44,6 +48,44 @@
     max-width: 1024px;
     padding: 50px 60px 0px;
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  &__logo {
+    display: inline-flex;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.header-desctop {
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+    padding: 50px 60px 0px;
+    border: 1px solid red;
+  }
+
+  @media screen and (max-width: 376px) {
+    display: none;
+  }
+}
+
+.header-mobile {
+  @media screen and (max-width: 376px) {
+    max-width: 376px;
+  }
+
+  &__auth-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+
+    background: rgba(245, 245, 250, 0.2);
+  }
 }
 
 .auth-nav {
@@ -51,6 +93,10 @@
   align-items: center;
   gap: 18px;
   margin-bottom: 16px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 
   &__social:hover .facebook-svg {
     color: $accentColor;
@@ -89,6 +135,10 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
+
+      @media screen and (max-width: 376px) {
+        display: none;
+      }
     }
 
     &::after {
@@ -100,6 +150,10 @@
       width: 6px;
       height: 6px;
       border-radius: 50%;
+
+      @media screen and (max-width: 376px) {
+        display: none;
+      }
     }
   }
 }
@@ -109,6 +163,10 @@
   justify-content: flex-end;
   gap: 15px;
   font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-start;
+  }
 
   &__link {
     padding-bottom: 3px;
@@ -169,6 +227,10 @@
 
   @media screen and (max-width: 1024px) {
     right: 23%;
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 12%;
   }
 }
 
