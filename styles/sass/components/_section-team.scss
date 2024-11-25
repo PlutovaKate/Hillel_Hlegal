@@ -1,11 +1,28 @@
 .section-team {
   width: 100%;
   max-width: 1920px;
+  margin: 0px auto 60px;
   padding: 0px 160px 46px;
 
   display: flex;
 
   border: 1px solid red;
+
+  @media screen and (max-width: 1440px) {
+    max-width: 1440px;
+    padding: 0px 60px 46px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 1024px;
+    padding: 0px 60px 46px;
+  }
+
+  &__menu-link {
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 5px;
+    }
+  }
 
   &__member {
     padding: 30px;

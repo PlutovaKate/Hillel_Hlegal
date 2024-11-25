@@ -1,8 +1,18 @@
 .footer {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
   background: $bgColor;
   padding: 30px 160px;
+
+  @media screen and (max-width: 1440px) {
+    max-width: 1440px;
+    padding: 30px 60px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 1024px;
+  }
 
   &__line {
     height: 2px;

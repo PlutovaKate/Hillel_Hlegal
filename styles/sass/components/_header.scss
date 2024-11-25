@@ -36,6 +36,14 @@
   justify-content: space-between;
 
   border: 1px solid red;
+
+  @media screen and (max-width: 1440px) {
+    max-width: 1440px;
+  }
+  @media screen and (max-width: 1024px) {
+    max-width: 1024px;
+    padding: 50px 60px 0px;
+  }
 }
 
 .auth-nav {
@@ -149,11 +157,19 @@
 .main-title {
   position: absolute;
   top: 45%;
-  right: 39%;
+  right: 35%;
 
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
+
+  @media screen and (max-width: 1440px) {
+    right: 30%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    right: 23%;
+  }
 }
 
 .facebook-svg {
