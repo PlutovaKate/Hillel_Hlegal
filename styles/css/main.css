@@ -847,6 +847,17 @@ body {
     max-width: 1024px;
   }
 }
+@media screen and (max-width: 768px) {
+  .section-publications {
+    max-width: 768px;
+    padding: 30px 30px 0px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section-publications {
+    max-width: 375px;
+  }
+}
 .section-publications__title {
   font-family: Montserrat;
   font-size: 38px;
@@ -858,6 +869,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
 }
+@media screen and (max-width: 768px) {
+  .section-publications__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
 
 .publications {
   display: -webkit-box;
@@ -865,12 +882,37 @@ body {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 768px) {
+  .publications {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .publications__item {
   background: rgb(255, 255, 255);
+  width: calc(33.3333333333% - 15px);
+}
+@media screen and (max-width: 768px) {
+  .publications__item {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (max-width: 376px) {
+  .publications__item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .publications__item-last {
+    width: 100%;
+  }
 }
 .publications__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
   margin-bottom: 30px;
-  max-width: 500px;
 }
 @media screen and (max-width: 1440px) {
   .publications__img {
@@ -880,6 +922,37 @@ body {
 @media screen and (max-width: 1024px) {
   .publications__img {
     max-width: 281px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .publications__img {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .publications__img {
+    max-width: 315px;
+  }
+}
+.publications__img-equity-associate {
+  background-image: url(../../../images/equity.jpg);
+}
+.publications__img-penalty {
+  background-image: url(../../../images/gdpr.jpg);
+}
+.publications__img-millennial {
+  background-image: url(../../../images/millennial.jpg);
+}
+@media screen and (max-width: 768px) {
+  .publications__img-millennial {
+    max-width: 768px;
+    background-image: url(../../../images/cover.jpg);
+  }
+}
+@media screen and (max-width: 376px) {
+  .publications__img-millennial {
+    max-width: 375px;
+    background-image: url(../../../images/millennial.jpg);
   }
 }
 .publications__title {

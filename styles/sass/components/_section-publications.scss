@@ -14,6 +14,15 @@
     max-width: 1024px;
   }
 
+  @media screen and (max-width: 768px) {
+    max-width: 768px;
+    padding: 30px 30px 0px;
+  }
+
+  @media screen and (max-width: 376px) {
+    max-width: 375px;
+  }
+
   &__title {
     font-family: Montserrat;
     font-size: 38px;
@@ -25,6 +34,11 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+
+    @media screen and (max-width: 768px) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   border: 1px solid red;
@@ -32,16 +46,39 @@
 
 .publications {
   display: flex;
-  // flex-wrap: nowrap;
   gap: 30px;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    // justify-content: center;
+  }
 
   &__item {
     background: rgba(255, 255, 255, 1);
+    width: calc(100% / 3 - 15px);
+
+    @media screen and (max-width: 768px) {
+      width: calc(100% / 2 - 15px);
+    }
+
+    @media screen and (max-width: 376px) {
+      width: 100%;
+    }
+
+    &-last {
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
   }
 
   &__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+
     margin-bottom: 30px;
-    max-width: 500px;
 
     @media screen and (max-width: 1440px) {
       max-width: 420px;
@@ -49,6 +86,36 @@
 
     @media screen and (max-width: 1024px) {
       max-width: 281px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media screen and (max-width: 376px) {
+      max-width: 315px;
+    }
+
+    &-equity-associate {
+      background-image: url(../../../images/equity.jpg);
+    }
+
+    &-penalty {
+      background-image: url(../../../images/gdpr.jpg);
+    }
+
+    &-millennial {
+      background-image: url(../../../images/millennial.jpg);
+
+      @media screen and (max-width: 768px) {
+        max-width: 768px;
+        background-image: url(../../../images/cover.jpg);
+      }
+
+      @media screen and (max-width: 376px) {
+        max-width: 375px;
+        background-image: url(../../../images/millennial.jpg);
+      }
     }
   }
 
