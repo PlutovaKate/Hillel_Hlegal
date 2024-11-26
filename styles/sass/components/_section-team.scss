@@ -28,6 +28,33 @@
     padding: 0px 30px 46px;
   }
 
+  &__img {
+    background-image: url(../../../images/team.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-width: 400px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    @media screen and (max-width: 1024px) {
+      background-position: 38% 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      max-width: 648px;
+      height: 500px;
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 12px;
+    }
+
+    @media screen and (max-width: 376px) {
+      background-position: 47% 50%;
+    }
+  }
+
   &__menu-link {
     @media screen and (max-width: 1024px) {
       margin-bottom: 5px;
@@ -37,6 +64,13 @@
   &__member {
     padding: 30px;
     background: $bgColor;
+
+    @media screen and (max-width: 1024px) {
+      width: 75%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &__text {

@@ -38,19 +38,19 @@
     justify-content: center;
   }
 
-  &__img {
-    width: 429px;
+  &__item {
+    width: calc(100% / 4);
 
-    @media screen and (max-width: 1440px) {
-      width: 359px;
-    }
-
-    @media screen and (max-width: 1024px) {
-      width: 255px;
+    @media screen and (max-width: 768px) {
+      width: calc(100% / 3);
     }
 
     @media screen and (max-width: 376px) {
-      width: 375px;
+      width: 100%;
     }
+  }
+
+  &__img {
+    width: 100%;
   }
 }

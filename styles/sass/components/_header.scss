@@ -23,7 +23,7 @@
   background-position: 50%;
   margin-bottom: 60px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1440px) {
     background-size: cover;
   }
 
@@ -53,7 +53,7 @@
     padding: 50px 60px 0px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     display: none;
   }
 
@@ -77,14 +77,22 @@
     border: 1px solid red;
   }
 
-  @media screen and (max-width: 376px) {
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 601px) {
     display: none;
   }
 }
 
 .header-mobile {
-  @media screen and (max-width: 376px) {
-    max-width: 376px;
+  @media screen and (max-width: 600px) {
+    max-width: 601px;
+  }
+
+  @media screen and (min-width: 601px) {
+    display: none;
   }
 
   &__auth-nav {
@@ -238,27 +246,26 @@
 .main-title {
   position: absolute;
   top: 45%;
-  right: 35%;
+  left: 37%;
 
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
 
   @media screen and (max-width: 1440px) {
-    right: 30%;
+    left: 28%;
   }
 
   @media screen and (max-width: 1024px) {
-    right: 23%;
+    left: 19%;
   }
 
   @media screen and (max-width: 768px) {
-    right: 12%;
+    top: 41%;
   }
 
   @media screen and (max-width: 376px) {
     top: 36%;
-    right: 0%;
     left: 26%;
   }
 }

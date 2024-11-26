@@ -50,7 +50,6 @@
 
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
-    // justify-content: center;
   }
 
   &__item {
@@ -77,6 +76,8 @@
     background-size: cover;
     background-position: center;
     height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 
     margin-bottom: 30px;
 
