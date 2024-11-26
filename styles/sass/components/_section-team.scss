@@ -23,6 +23,11 @@
     flex-direction: column;
   }
 
+  @media screen and (max-width: 376px) {
+    max-width: 375px;
+    padding: 0px 30px 46px;
+  }
+
   &__menu-link {
     @media screen and (max-width: 1024px) {
       margin-bottom: 5px;
@@ -44,6 +49,11 @@
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+
+    @media screen and (max-width: 376px) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   &__name {

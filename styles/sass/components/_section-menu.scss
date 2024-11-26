@@ -21,6 +21,13 @@
   @media screen and (max-width: 768px) {
     max-width: 768px;
     flex-direction: column;
+    padding: 0px;
+  }
+
+  @media screen and (max-width: 376px) {
+    max-width: 375px;
+    padding: 0px;
+    margin-bottom: 30px;
   }
 
   &__list {
@@ -36,9 +43,15 @@
       flex-direction: row;
       border-right: none;
       margin-bottom: 60px;
+      padding-left: 60px;
       // border-bottom: 4px solid rgba(255, 255, 255, 0.3);
 
       overflow-x: scroll;
+    }
+
+    @media screen and (max-width: 376px) {
+      padding-left: 30px;
+      margin-bottom: 30px;
     }
   }
 
@@ -50,6 +63,11 @@
 
     @media screen and (max-width: 768px) {
       white-space: nowrap;
+    }
+
+    @media screen and (max-width: 376px) {
+      font-size: 30px;
+      line-height: 37px;
     }
 
     &:hover {
@@ -86,7 +104,11 @@
 
     @media screen and (max-width: 768px) {
       max-width: 100%;
-      padding: 0;
+      padding: 0 60px;
+    }
+
+    @media screen and (max-width: 376px) {
+      padding: 0px 30px;
     }
   }
 
@@ -96,6 +118,11 @@
     line-height: 36px;
 
     margin-bottom: 30px;
+
+    @media screen and (max-width: 376px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__text {

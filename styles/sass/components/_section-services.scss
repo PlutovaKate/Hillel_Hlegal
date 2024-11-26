@@ -19,6 +19,11 @@
     max-width: 768px;
   }
 
+  @media screen and (max-width: 376px) {
+    max-width: 375px;
+    padding: 0px 30px 60px;
+  }
+
   &__title {
     font-size: 38px;
     font-weight: 700;
@@ -30,6 +35,11 @@
     -webkit-background-clip: text;
 
     margin-bottom: 60px;
+
+    @media screen and (max-width: 376px) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   &__list {

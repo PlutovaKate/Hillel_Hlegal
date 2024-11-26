@@ -27,6 +27,10 @@
     background-size: cover;
   }
 
+  @media screen and (max-width: 376px) {
+    margin-bottom: 30px;
+  }
+
   border: 1px solid red;
 }
 
@@ -55,8 +59,13 @@
 
   &__logo {
     display: inline-flex;
+
     @media screen and (max-width: 768px) {
       margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 376px) {
+      margin-bottom: 0px;
     }
   }
 }
@@ -85,6 +94,20 @@
     padding: 10px 15px;
 
     background: rgba(245, 245, 250, 0.2);
+  }
+
+  &__logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 2px 0px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 15px;
   }
 }
 
@@ -232,6 +255,12 @@
   @media screen and (max-width: 768px) {
     right: 12%;
   }
+
+  @media screen and (max-width: 376px) {
+    top: 36%;
+    right: 0%;
+    left: 26%;
+  }
 }
 
 .facebook-svg {
@@ -241,4 +270,13 @@
     color: $accentColor;
     transition: all 0.5s;
   }
+}
+
+.page-name {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mobile-logo {
+  width: 69px;
 }

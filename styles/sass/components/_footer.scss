@@ -18,6 +18,11 @@
     max-width: 768px;
   }
 
+  @media screen and (max-width: 376px) {
+    max-width: 376px;
+    padding: 30px;
+  }
+
   &__line {
     height: 2px;
     background: $separatorColor;
@@ -27,6 +32,10 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 376px) {
+      flex-direction: column;
+    }
   }
 
   &__location {
@@ -34,6 +43,11 @@
     align-items: center;
     gap: 26px;
     margin-bottom: 21px;
+
+    @media screen and (max-width: 376px) {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   &__address {
@@ -57,6 +71,10 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
+
+    @media screen and (max-width: 376px) {
+      display: none;
+    }
   }
 
   &__contacts {
@@ -64,6 +82,12 @@
     display: flex;
     align-items: center;
     gap: 26px;
+
+    @media screen and (max-width: 376px) {
+      flex-direction: column;
+      margin-bottom: 30px;
+      gap: 10px;
+    }
   }
 
   &__social:hover &__facebook {
@@ -123,5 +147,9 @@
     line-height: 20px;
 
     color: $textColor;
+
+    @media screen and (max-width: 376px) {
+      text-align: center;
+    }
   }
 }

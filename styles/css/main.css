@@ -69,6 +69,7 @@ body {
 @media screen and (max-width: 375px) {
   .shadow-light {
     max-width: 295px;
+    margin-bottom: 30px;
   }
 }
 
@@ -129,6 +130,11 @@ body {
     background-size: cover;
   }
 }
+@media screen and (max-width: 376px) {
+  .wrap-header-hero {
+    margin-bottom: 30px;
+  }
+}
 
 .header {
   width: 100%;
@@ -169,6 +175,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 376px) {
+  .header__logo {
+    margin-bottom: 0px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .header-desctop {
@@ -200,6 +211,28 @@ body {
           align-items: center;
   padding: 10px 15px;
   background: rgba(245, 245, 250, 0.2);
+}
+.header-mobile__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 0px;
+}
+.header-mobile__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 15px;
 }
 
 .auth-nav {
@@ -352,6 +385,13 @@ body {
     right: 12%;
   }
 }
+@media screen and (max-width: 376px) {
+  .main-title {
+    top: 36%;
+    right: 0%;
+    left: 26%;
+  }
+}
 
 .facebook-svg {
   color: rgb(255, 255, 255);
@@ -360,6 +400,15 @@ body {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.page-name {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mobile-logo {
+  width: 69px;
 }
 
 .section-menu {
@@ -394,6 +443,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section-menu {
+    max-width: 375px;
+    padding: 0px;
+    margin-bottom: 30px;
   }
 }
 .section-menu__list {
@@ -417,7 +474,14 @@ body {
             flex-direction: row;
     border-right: none;
     margin-bottom: 60px;
+    padding-left: 60px;
     overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section-menu__list {
+    padding-left: 30px;
+    margin-bottom: 30px;
   }
 }
 .section-menu__link {
@@ -429,6 +493,12 @@ body {
 @media screen and (max-width: 768px) {
   .section-menu__link {
     white-space: nowrap;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section-menu__link {
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 .section-menu__link:hover {
@@ -462,7 +532,12 @@ body {
 @media screen and (max-width: 768px) {
   .section-menu__descr {
     max-width: 100%;
-    padding: 0;
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section-menu__descr {
+    padding: 0px 30px;
   }
 }
 .section-menu__title {
@@ -470,6 +545,12 @@ body {
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 376px) {
+  .section-menu__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .section-menu__text {
   font-size: 19px;
@@ -499,6 +580,12 @@ body {
     max-width: 768px;
   }
 }
+@media screen and (max-width: 376px) {
+  .section-services {
+    max-width: 375px;
+    padding: 0px 30px 60px;
+  }
+}
 .section-services__title {
   font-size: 38px;
   font-weight: 700;
@@ -508,6 +595,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 376px) {
+  .section-services__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 .section-services__list {
   display: -webkit-box;
@@ -629,6 +722,12 @@ body {
             flex-direction: column;
   }
 }
+@media screen and (max-width: 376px) {
+  .section-team {
+    max-width: 375px;
+    padding: 0px 30px 46px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .section-team__menu-link {
     margin-bottom: 5px;
@@ -647,6 +746,12 @@ body {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+@media screen and (max-width: 376px) {
+  .section-team__text {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 .section-team__name {
   font-weight: 700;
@@ -715,6 +820,11 @@ body {
 @media screen and (max-width: 1024px) {
   .section-clients__img {
     width: 255px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section-clients__img {
+    width: 375px;
   }
 }
 
@@ -830,6 +940,12 @@ body {
     max-width: 768px;
   }
 }
+@media screen and (max-width: 376px) {
+  .footer {
+    max-width: 376px;
+    padding: 30px;
+  }
+}
 .footer__line {
   height: 2px;
   background: rgb(230, 230, 240);
@@ -843,6 +959,14 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 376px) {
+  .footer__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .footer__location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -852,6 +976,15 @@ body {
           align-items: center;
   gap: 26px;
   margin-bottom: 21px;
+}
+@media screen and (max-width: 376px) {
+  .footer__location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
 }
 .footer__address {
   color: rgb(50, 50, 100);
@@ -873,6 +1006,11 @@ body {
   height: 6px;
   border-radius: 50%;
 }
+@media screen and (max-width: 376px) {
+  .footer__map::before {
+    display: none;
+  }
+}
 .footer__contacts {
   position: relative;
   display: -webkit-box;
@@ -882,6 +1020,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 26px;
+}
+@media screen and (max-width: 376px) {
+  .footer__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+    gap: 10px;
+  }
 }
 .footer__social:hover .footer__facebook {
   color: rgb(240, 20, 90);
@@ -932,4 +1080,9 @@ body {
   font-family: Montserrat;
   line-height: 20px;
   color: rgb(179, 179, 186);
+}
+@media screen and (max-width: 376px) {
+  .footer__copyright {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
