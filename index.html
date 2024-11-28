@@ -137,7 +137,7 @@
                 <a href="">about us</a>
               </li>
               <li class="navigation__link">
-                <a href="">services</a>
+                <a href="./services.html">services</a>
               </li>
               <li class="navigation__link">
                 <a href="">team</a>
@@ -219,7 +219,7 @@
                   <a href="">about us</a>
                 </li>
                 <li class="navigation__link">
-                  <a href="">services</a>
+                  <a href="./services.html">services</a>
                 </li>
                 <li class="navigation__link">
                   <a href="">team</a>
@@ -1014,5 +1014,51 @@
         <p class="footer__copyright">&copy; 2021 HLEGAL Law company, LLC</p>
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal__inner">
+        <h1 class="modal__heading">We would like to help you</h1>
+        <button class="modal__closebtn">
+          <svg
+            width="32"
+            height="32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="m7 7 18 18M25 7 7 25" stroke="#EC6F5D" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+      <form class="modal__form">
+        <input
+          class="modal__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <textarea
+          class="modal__textarea"
+          name="massage"
+          placeholder="Message"
+        ></textarea>
+        <p class="modal__text">How to answer you?</p>
+        <input
+          class="modal__input"
+          type="tel"
+          name="phone"
+          placeholder="Phone number"
+        />
+        <input
+          class="modal__input"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+        <button class="modal__btn" type="submit">Send message</button>
+      </form>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
