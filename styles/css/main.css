@@ -154,9 +154,9 @@ body {
     max-width: 1440px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
   .header {
-    max-width: 1024px;
+    max-width: 1124px;
     padding: 50px 60px 0px;
   }
 }
@@ -749,7 +749,7 @@ body {
   }
 }
 .section-team__img {
-  background-image: url(../../../images/team.jpg);
+  background-image: url(../../../images/team-member.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
