@@ -6,8 +6,6 @@
   padding: 0px 280px;
   margin: 0px auto 60px;
 
-  border: 1px solid red;
-
   @media screen and (max-width: 1440px) {
     max-width: 1440px;
     padding: 0 180px;
@@ -44,7 +42,6 @@
       border-right: none;
       margin-bottom: 60px;
       padding-left: 60px;
-      // border-bottom: 4px solid rgba(255, 255, 255, 0.3);
 
       overflow-x: scroll;
     }

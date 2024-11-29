@@ -123,7 +123,6 @@ body {
   background-repeat: no-repeat;
   background-position: 50%;
   margin-bottom: 60px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .wrap-header-hero {
@@ -147,7 +146,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .header {
@@ -193,7 +191,6 @@ body {
     max-width: 910px;
     padding: 50px 60px 0px;
     margin: 0 auto;
-    border: 1px solid red;
   }
 }
 @media screen and (min-width: 910px) {
@@ -451,7 +448,6 @@ body {
   max-width: 1920px;
   padding: 0px 280px;
   margin: 0px auto 60px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .section-menu {
@@ -591,7 +587,6 @@ body {
   max-width: 1920px;
   padding: 0px 160px 60px;
   margin: 0px auto;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .section-services {
@@ -653,7 +648,6 @@ body {
 }
 .section-services__item {
   width: calc(33.3333333333% - 45px);
-  border: 1px solid red;
 }
 @media screen and (max-width: 768px) {
   .section-services__item {
@@ -719,7 +713,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .section-team {
@@ -749,7 +742,7 @@ body {
   }
 }
 .section-team__img {
-  background-image: url("../../../images/team-member.jpg");
+  background-image: url(../../../images/team-member.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -829,7 +822,6 @@ body {
   max-width: 1920px;
   padding: 0px 100px;
   margin: 0 auto 60px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .section-clients {
@@ -891,7 +883,6 @@ body {
   margin: 0 auto;
   padding: 30px 160px 0px;
   background: rgb(245, 245, 250);
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .section-publications {
@@ -995,24 +986,24 @@ body {
   }
 }
 .publications__img-equity-associate {
-  background-image: url("../../../images/equity.jpg");
+  background-image: url(../../../images/equity.jpg);
 }
 .publications__img-penalty {
-  background-image: url("../../../images/gdpr.jpg");
+  background-image: url(../../../images/gdpr.jpg);
 }
 .publications__img-millennial {
-  background-image: url("../../../images/millennial.jpg");
+  background-image: url(../../../images/millennial.jpg);
 }
 @media screen and (max-width: 768px) {
   .publications__img-millennial {
     max-width: 768px;
-    background-image: url("../../../images/cover.jpg");
+    background-image: url(../../../images/cover.jpg);
   }
 }
 @media screen and (max-width: 376px) {
   .publications__img-millennial {
     max-width: 375px;
-    background-image: url("../../../images/millennial.jpg");
+    background-image: url(../../../images/millennial.jpg);
   }
 }
 .publications__title {
@@ -1553,7 +1544,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 280px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .section-describe-service {
@@ -1612,7 +1602,6 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   padding: 60px 280px;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1440px) {
   .section-description-service {

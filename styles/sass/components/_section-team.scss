@@ -5,8 +5,6 @@
   padding: 0px 160px 46px;
   display: flex;
 
-  border: 1px solid red;
-
   @media screen and (max-width: 1440px) {
     max-width: 1440px;
     padding: 0px 60px 46px;
@@ -28,7 +26,7 @@
   }
 
   &__img {
-    background-image: url("../../../images/team-member.jpg");
+    background-image: url(../../../images/team-member.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
