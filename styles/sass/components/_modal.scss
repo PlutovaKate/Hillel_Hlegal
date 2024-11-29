@@ -1,7 +1,10 @@
 .modal {
+  position: absolute;
+  top: 12%;
+  right: 31%;
+
   width: 100%;
   max-width: 650px;
-  margin: 0 auto;
   padding: 30px;
   border-radius: 12px;
   display: flex;
@@ -9,6 +12,47 @@
 
   background: rgba(245, 245, 250, 1);
   box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
+
+  @media screen and (max-width: 1440px) {
+    right: 24%;
+  }
+
+  @media screen and (max-width: 1150px) {
+    right: 19%;
+  }
+
+  @media screen and (max-width: 950px) {
+    right: 14%;
+  }
+
+  @media screen and (max-width: 850px) {
+    right: 11%;
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 7%;
+  }
+
+  @media screen and (max-width: 720px) {
+    right: 4%;
+  }
+
+  @media screen and (max-width: 700px) {
+    right: 2%;
+  }
+  @media screen and (max-width: 670px) {
+    right: 1%;
+  }
+
+  @media screen and (max-width: 655px) {
+    right: 0%;
+  }
+
+  @media screen and (max-width: 644px) {
+    top: 0;
+    border-radius: 0px;
+    height: 100%;
+  }
 
   &__inner {
     display: flex;
@@ -46,10 +90,10 @@
 
     border: none;
 
-    :hover {
+    &:hover,
+    &:focus {
       border-radius: 8px;
       background: rgba(230, 230, 240, 1);
-
       transition: all 0.5s;
     }
   }
@@ -84,6 +128,8 @@
     &:hover,
     &:focus {
       border: 1px solid rgba(36, 163, 255, 1);
+
+      transition: all 0.5s;
     }
   }
 
@@ -113,6 +159,7 @@
     &:hover,
     &:focus {
       border: 1px solid rgba(36, 163, 255, 1);
+      transition: all 0.5s;
     }
   }
 
@@ -146,10 +193,30 @@
     &:hover,
     &:focus {
       background: rgba(0, 133, 255, 1);
+      transition: all 0.5s;
     }
   }
 }
 
 .active {
   background: rgba(0, 108, 207, 1);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: rgba(50, 50, 100, 1);
+  box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }

@@ -53,7 +53,7 @@
     padding: 50px 60px 0px;
   }
 
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 910px) {
     display: none;
   }
 
@@ -70,14 +70,20 @@
   }
 }
 
+.logo-active-page {
+  align-items: flex-start;
+  gap: 4px;
+}
+
 .header-desctop {
-  @media screen and (max-width: 768px) {
-    max-width: 768px;
+  @media screen and (max-width: 910px) {
+    max-width: 910px;
     padding: 50px 60px 0px;
+    margin: 0 auto;
     border: 1px solid red;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 910px) {
     display: none;
   }
 
@@ -129,8 +135,10 @@
     margin-bottom: 30px;
   }
 
-  &__social:hover .facebook-svg {
+  &__social:hover .facebook-svg,
+  &__social:focus .facebook-svg {
     color: $accentColor;
+    transition: all 0.5s;
   }
 
   &__list {
@@ -206,7 +214,8 @@
   &__link {
     padding-bottom: 3px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-bottom: 3px solid rgba(255, 255, 255, 1);
       transition: all 0.5s;
     }
@@ -222,8 +231,8 @@
 }
 
 .button-tab {
-  width: 33 px;
-  height: 25 px;
+  width: 33px;
+  height: 25px;
   padding: 5px 7px 5px 7px;
   border-radius: 8px;
   border: none;
@@ -241,7 +250,8 @@
     background: $accentColor;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: rgba(255, 255, 255, 0.2);
     transition: all 0.5s;
   }
@@ -277,15 +287,21 @@
 .facebook-svg {
   color: rgba(255, 255, 255, 1);
 
-  :hover {
+  &:hover,
+  &:focus {
     color: $accentColor;
     transition: all 0.5s;
   }
 }
 
 .page-name {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 36px;
+  line-height: 44px;
+
+  @media screen and (max-width: 376px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .mobile-logo {

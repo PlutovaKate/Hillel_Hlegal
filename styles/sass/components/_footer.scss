@@ -101,7 +101,8 @@
     }
   }
 
-  &__social:hover &__facebook {
+  &__social:hover &__facebook,
+  &__social:focus &__facebook {
     color: $accentColor;
     transition: all 0.5s;
   }
@@ -155,7 +156,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $accentColor;
       transition: all 0.5s;
     }

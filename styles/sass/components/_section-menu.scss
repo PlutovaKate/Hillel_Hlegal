@@ -70,7 +70,8 @@
       line-height: 37px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $accentColor;
       transition: all 0.5s;
     }

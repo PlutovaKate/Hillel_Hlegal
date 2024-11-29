@@ -103,7 +103,8 @@
   letter-spacing: 1px;
   color: $regularColor;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $accentColor;
     transition: all 0.5s;
 

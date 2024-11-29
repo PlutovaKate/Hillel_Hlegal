@@ -94,13 +94,13 @@ body {
 .scroll__img {
   color: rgb(255, 255, 255);
 }
-.scroll:hover {
+.scroll:hover, .scroll:focus {
   cursor: pointer;
   border-color: rgba(240, 20, 90, 0.5);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.scroll:hover .scroll__img {
+.scroll:hover .scroll__img, .scroll:focus .scroll__img {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -160,7 +160,7 @@ body {
     padding: 50px 60px 0px;
   }
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 910px) {
   .header {
     display: none;
   }
@@ -181,14 +181,22 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+.logo-active-page {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 4px;
+}
+
+@media screen and (max-width: 910px) {
   .header-desctop {
-    max-width: 768px;
+    max-width: 910px;
     padding: 50px 60px 0px;
+    margin: 0 auto;
     border: 1px solid red;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 910px) {
   .header-desctop {
     display: none;
   }
@@ -260,8 +268,10 @@ body {
     margin-bottom: 30px;
   }
 }
-.auth-nav__social:hover .facebook-svg {
+.auth-nav__social:hover .facebook-svg, .auth-nav__social:focus .facebook-svg {
   color: rgb(240, 20, 90);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .auth-nav__list {
   display: -webkit-box;
@@ -341,7 +351,7 @@ body {
 .navigation__link {
   padding-bottom: 3px;
 }
-.navigation__link:hover {
+.navigation__link:hover, .navigation__link:focus {
   border-bottom: 3px solid rgb(255, 255, 255);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -354,8 +364,8 @@ body {
 }
 
 .button-tab {
-  width: 33 px;
-  height: 25 px;
+  width: 33px;
+  height: 25px;
   padding: 5px 7px 5px 7px;
   border-radius: 8px;
   border: none;
@@ -370,7 +380,7 @@ body {
 .button-tab_active {
   background: rgb(240, 20, 90);
 }
-.button-tab:hover {
+.button-tab:hover, .button-tab:focus {
   background: rgba(255, 255, 255, 0.2);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -409,15 +419,21 @@ body {
 .facebook-svg {
   color: rgb(255, 255, 255);
 }
-.facebook-svg :hover {
+.facebook-svg:hover, .facebook-svg:focus {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .page-name {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 36px;
+  line-height: 44px;
+}
+@media screen and (max-width: 376px) {
+  .page-name {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .mobile-logo {
@@ -514,7 +530,7 @@ body {
     line-height: 37px;
   }
 }
-.section-menu__link:hover {
+.section-menu__link:hover, .section-menu__link:focus {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -681,12 +697,12 @@ body {
   letter-spacing: 1px;
   color: rgb(36, 163, 255);
 }
-.menu-link:hover {
+.menu-link:hover, .menu-link:focus {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.menu-link:hover .menu-link__arrow {
+.menu-link:hover .menu-link__arrow, .menu-link:focus .menu-link__arrow {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1165,7 +1181,7 @@ body {
     gap: 10px;
   }
 }
-.footer__social:hover .footer__facebook {
+.footer__social:hover .footer__facebook, .footer__social:focus .footer__facebook {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1215,7 +1231,7 @@ body {
     display: none;
   }
 }
-.footer__mail:hover {
+.footer__mail:hover, .footer__mail:focus {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1232,9 +1248,11 @@ body {
 }
 
 .modal {
+  position: absolute;
+  top: 12%;
+  right: 31%;
   width: 100%;
   max-width: 650px;
-  margin: 0 auto;
   padding: 30px;
   border-radius: 12px;
   display: -webkit-box;
@@ -1247,6 +1265,58 @@ body {
   background: rgb(245, 245, 250);
   -webkit-box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
           box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
+}
+@media screen and (max-width: 1440px) {
+  .modal {
+    right: 24%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .modal {
+    right: 19%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .modal {
+    right: 14%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .modal {
+    right: 11%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    right: 7%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .modal {
+    right: 4%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .modal {
+    right: 2%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .modal {
+    right: 1%;
+  }
+}
+@media screen and (max-width: 655px) {
+  .modal {
+    right: 0%;
+  }
+}
+@media screen and (max-width: 644px) {
+  .modal {
+    top: 0;
+    border-radius: 0px;
+    height: 100%;
+  }
 }
 .modal__inner {
   display: -webkit-box;
@@ -1292,7 +1362,7 @@ body {
       align-self: flex-start;
   border: none;
 }
-.modal__closebtn :hover {
+.modal__closebtn:hover, .modal__closebtn:focus {
   border-radius: 8px;
   background: rgb(230, 230, 240);
   -webkit-transition: all 0.5s;
@@ -1357,6 +1427,8 @@ body {
 }
 .modal__input:hover, .modal__input:focus {
   border: 1px solid rgb(36, 163, 255);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .modal__textarea {
   width: 100%;
@@ -1409,6 +1481,8 @@ body {
 }
 .modal__textarea:hover, .modal__textarea:focus {
   border: 1px solid rgb(36, 163, 255);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .modal__text {
   font-family: Montserrat;
@@ -1438,10 +1512,30 @@ body {
 }
 .modal__btn:hover, .modal__btn:focus {
   background: rgb(0, 133, 255);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .active {
   background: rgb(0, 108, 207);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: rgb(50, 50, 100);
+  -webkit-box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
+          box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .section-describe-service {
