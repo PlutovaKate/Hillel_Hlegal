@@ -995,24 +995,24 @@ body {
   }
 }
 .publications__img-equity-associate {
-  background-image: url(../../../images/equity.jpg);
+  background-image: url("../../../images/equity.jpg");
 }
 .publications__img-penalty {
-  background-image: url(../../../images/gdpr.jpg);
+  background-image: url("../../../images/gdpr.jpg");
 }
 .publications__img-millennial {
-  background-image: url(../../../images/millennial.jpg);
+  background-image: url("../../../images/millennial.jpg");
 }
 @media screen and (max-width: 768px) {
   .publications__img-millennial {
     max-width: 768px;
-    background-image: url(../../../images/cover.jpg);
+    background-image: url("../../../images/cover.jpg");
   }
 }
 @media screen and (max-width: 376px) {
   .publications__img-millennial {
     max-width: 375px;
-    background-image: url(../../../images/millennial.jpg);
+    background-image: url("../../../images/millennial.jpg");
   }
 }
 .publications__title {
