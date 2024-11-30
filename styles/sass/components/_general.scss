@@ -9,6 +9,24 @@ a {
 
 body {
   width: 100%;
+  font-family: inherit;
+}
+
+button,
+input,
+select,
+textarea,
+a,
+address,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Montserrat;
 }
 
 .shadow-dark {

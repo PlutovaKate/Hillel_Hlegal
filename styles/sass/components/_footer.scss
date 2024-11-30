@@ -57,14 +57,18 @@
 
   &__address {
     color: rgba(50, 50, 100, 1);
-    font-family: Montserrat;
     line-height: 20px;
+
+    @media screen and (min-width: 405px) {
+      white-space: nowrap;
+    }
   }
 
   &__map {
     position: relative;
     text-transform: uppercase;
     color: $regularColor;
+    white-space: nowrap;
   }
 
   &__map::before {
@@ -112,9 +116,9 @@
   }
 
   &__tel {
-    font-family: Montserrat;
     font-weight: 700;
     line-height: 20px;
+    white-space: nowrap;
 
     color: rgba(70, 70, 110, 1);
   }
@@ -129,13 +133,12 @@
     height: 6px;
     border-radius: 50%;
 
-    @media screen and (max-width: 488px) {
+    @media screen and (max-width: 504px) {
       display: none;
     }
   }
 
   &__mail {
-    font-family: Montserrat;
     font-weight: 700;
     line-height: 20px;
 
@@ -151,7 +154,7 @@
       height: 6px;
       border-radius: 50%;
 
-      @media screen and (max-width: 488px) {
+      @media screen and (max-width: 504px) {
         display: none;
       }
     }
@@ -164,7 +167,6 @@
   }
 
   &__copyright {
-    font-family: Montserrat;
     line-height: 20px;
 
     color: $textColor;

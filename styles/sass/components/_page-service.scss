@@ -27,7 +27,6 @@
   }
 
   &__title {
-    font-family: Montserrat;
     font-size: 38px;
     font-weight: 700;
     line-height: 46px;
@@ -46,7 +45,6 @@
   }
 
   &__text {
-    font-family: Montserrat;
     font-size: 19px;
     line-height: 30px;
     text-align: center;
@@ -91,7 +89,6 @@
   }
 
   &__title {
-    font-family: Montserrat;
     font-size: 22px;
     font-weight: 700;
     line-height: 27px;
@@ -115,10 +112,15 @@
   }
 
   &__item {
-    font-family: Montserrat;
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 15px;
+    list-style-type: disc;
+
+    &::marker {
+      color: $accentColor;
+      font-size: 1.2em;
+    }
 
     &:last-child {
       margin-bottom: 0px;

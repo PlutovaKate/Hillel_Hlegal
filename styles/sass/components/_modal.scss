@@ -10,6 +10,8 @@
   display: flex;
   flex-direction: column;
 
+  font-family: Montserrat;
+
   background: rgba(245, 245, 250, 1);
   box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.5);
 
@@ -62,7 +64,6 @@
   }
 
   &__heading {
-    font-family: Montserrat;
     font-size: 38px;
     font-weight: 700;
     line-height: 46px;
@@ -113,12 +114,10 @@
     margin-bottom: 15px;
 
     color: rgba(0, 0, 0, 1);
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 26px;
 
     &::placeholder {
-      font-family: Montserrat;
       font-size: 16px;
       font-weight: 400;
       line-height: 26px;
@@ -144,12 +143,10 @@
     border-radius: 8px;
 
     color: rgba(0, 0, 0, 1);
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 26px;
 
     &::placeholder {
-      font-family: Montserrat;
       font-size: 16px;
       font-weight: 400;
       line-height: 26px;
@@ -164,7 +161,6 @@
   }
 
   &__text {
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
@@ -185,7 +181,6 @@
     margin-top: 15px;
 
     color: rgba(255, 255, 255, 1);
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
