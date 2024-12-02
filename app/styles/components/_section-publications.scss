@@ -97,24 +97,24 @@
     }
 
     &-equity-associate {
-      background-image: url(../../../images/equity.jpg);
+      background-image: url(../images/equity.jpg);
     }
 
     &-penalty {
-      background-image: url(../../../images/gdpr.jpg);
+      background-image: url(../images/gdpr.jpg);
     }
 
     &-millennial {
-      background-image: url(../../../images/millennial.jpg);
+      background-image: url(../images/millennial.jpg);
 
       @media screen and (max-width: 768px) {
         max-width: 768px;
-        background-image: url(../../../images/cover.jpg);
+        background-image: url(../images/cover.jpg);
       }
 
       @media screen and (max-width: 376px) {
         max-width: 375px;
-        background-image: url(../../../images/millennial.jpg);
+        background-image: url(../images/millennial.jpg);
       }
     }
   }
