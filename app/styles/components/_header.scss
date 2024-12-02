@@ -108,7 +108,6 @@
   &__logo {
     display: flex;
     gap: 4px;
-    align-items: center;
     padding: 2px 0px;
   }
 
@@ -291,11 +290,17 @@
 .page-name {
   font-size: 36px;
   line-height: 44px;
+  align-self: flex-start;
 
   @media screen and (max-width: 376px) {
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.mobile-name {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .mobile-logo {
