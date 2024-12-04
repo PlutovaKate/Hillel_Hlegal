@@ -26,29 +26,33 @@
   }
 
   &__img {
-    background-image: url(../images/team-member.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: block;
     width: 100%;
-    max-width: 400px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 
     @media screen and (max-width: 1024px) {
-      background-position: 38% 50%;
+      display: none;
     }
 
     @media screen and (max-width: 768px) {
-      width: 100%;
-      max-width: 648px;
-      height: 500px;
-      border-bottom-left-radius: 0px;
+      display: block;
       border-top-right-radius: 12px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+
+  &__portret {
+    @media screen and (min-width: 1025px) {
+      display: none;
     }
 
-    @media screen and (max-width: 376px) {
-      background-position: 47% 50%;
+    @media screen and (max-width: 1024px) {
+      width: 45%;
+      display: block;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
     }
   }
 
@@ -63,7 +67,7 @@
     background: $bgColor;
 
     @media screen and (max-width: 1024px) {
-      width: 75%;
+      width: 55%;
     }
     @media screen and (max-width: 768px) {
       width: 100%;

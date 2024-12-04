@@ -66,6 +66,14 @@
   }
 }
 
+.logo {
+  width: 130px;
+
+  &__slash {
+    width: 21px;
+  }
+}
+
 .logo-active-page {
   align-items: flex-start;
   gap: 4px;
