@@ -3,7 +3,7 @@
   max-width: 1920px;
   margin: 0px auto 60px;
   padding: 0px 160px 46px;
-  display: flex;
+  // display: flex;
 
   @media screen and (max-width: 1440px) {
     max-width: 1440px;
@@ -28,6 +28,7 @@
   &__img {
     display: block;
     width: 100%;
+    max-width: 400px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 
@@ -104,4 +105,12 @@
     line-height: 22px;
     color: $textColor;
   }
+}
+
+.slider-wrap {
+  display: flex;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
 }
