@@ -59,6 +59,14 @@
     color: $textColor;
     white-space: nowrap;
 
+    @media screen and (max-width: 870px) {
+      white-space: wrap;
+    }
+
+    @media screen and (max-width: 768px) {
+      white-space: nowrap;
+    }
+
     @media screen and (max-width: 376px) {
       font-size: 30px;
       line-height: 37px;
