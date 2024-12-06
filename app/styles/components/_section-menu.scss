@@ -64,10 +64,11 @@
       line-height: 37px;
     }
 
-    &:hover,
-    &:focus {
-      // color: $accentColor;
+    &:hover {
+      color: $accentColor;
+    }
 
+    &:focus {
       background-image: linear-gradient(
         90.13deg,
         #ef8080 0.84%,
@@ -76,19 +77,7 @@
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
-      transition: all 0.5s;
     }
-
-    // &_active {
-    //   background-image: linear-gradient(
-    //     90.13deg,
-    //     #ef8080 0.84%,
-    //     #f0145a 99.96%
-    //   );
-    //   color: transparent;
-    //   background-clip: text;
-    //   -webkit-background-clip: text;
-    // }
   }
 
   &__descr {
