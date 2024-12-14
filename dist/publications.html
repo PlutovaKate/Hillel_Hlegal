@@ -15,7 +15,16 @@
       content="plutovakate.github.io/Hillel_Hlegal/dist/"
     />
     <meta property="og:image" content="./images/logo.svg" />
+
     <link rel="stylesheet" href="./styles/reset.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./styles/main.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,219 +35,210 @@
     />
   </head>
   <body>
-    <header class="header-mobile">
-      <div class="header-mobile__auth-nav header-mobile__auth-nav_light-theme">
-        <ul class="auth-nav__list">
-          <li>
-            <button class="button-tab button-tab_light-theme" type="button">
-              УК
-            </button>
-          </li>
-          <li>
-            <button class="button-tab button-tab_light-theme" type="button">
-              РУ
-            </button>
-          </li>
-          <li>
-            <button class="button-tab button-tab_active" type="button">
-              EN
-            </button>
-          </li>
-        </ul>
-        <a class="auth-nav__tel auth-nav__tel_light-theme" href="tel:0800211927"
-          >0800 211 927</a
-        >
-      </div>
-
-      <div class="header-mobile__wrap">
-        <div class="header-mobile__logo">
-          <a class="header__logo" href="/">
-            <img class="mobile-logo" src="./images/logo-black.svg" alt="logo" />
+    <header class=" header-publications">
+      <nav class="navbar navbar-expand-sm bg-body-tertiary custom-navbar">
+      
+          <a class="header__logo header__logo-publications " href="./index.html">
+            <img class="logo" src="./images/logo-black.svg" alt="logo" />
             <img
-              class="logo__slash logo__slash_mobile"
+              class="logo__slash"
               src="./images/slash.svg"
               aria-hidden="true"
             />
             <p class="page-name page-name_light-theme">publications</p>
           </a>
-        </div>
-
-        <svg
-          class="btn-hamburger"
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="33"
-          fill="none"
-        >
-          <path
-            stroke="currentColor"
-            stroke-width="2"
-            d="M7 10.5h18M7 16.5h18M7 22.5h18"
-          />
-        </svg>
-      </div>
-    </header>
-
-    <header class="header-desctop">
-      <div class="auth-nav">
-        <ul class="auth-nav__list">
-          <li>
-            <button class="button-tab button-tab_light-theme" type="button">
-              УК
-            </button>
-          </li>
-          <li>
-            <button class="button-tab button-tab_light-theme" type="button">
-              РУ
-            </button>
-          </li>
-          <li>
-            <button class="button-tab button-tab_active" type="button">
-              EN
-            </button>
-          </li>
-        </ul>
-
-        <address class="auth-nav__address auth-nav__address_light-theme">
-          Kyiv, Mechnikova str, 14/1
-        </address>
-
-        <a class="auth-nav__tel auth-nav__tel_light-theme" href="tel:0800211927"
-          >0800 211 927</a
-        >
-
-        <div>
-          <a class="auth-nav__social">
-            <svg
-              class="facebook-svg facebook-svg_light-theme"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="25"
-              fill="none"
-            >
-              <path
-                fill="currentColor"
-                d="M24 12.573C24 5.905 18.627.5 12 .5S0 5.905 0 12.573C0 18.6 4.388 23.594 10.125 24.5v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.791-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24.5C19.612 23.594 24 18.6 24 12.573Z"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <a class="header__logo" href="/">
-        <img class="logo" src="./images/logo-black.svg" alt="logo" />
-        <img class="logo__slash" src="./images/slash.svg" aria-hidden="true" />
-
-        <p class="page-name page-name_light-theme">publications</p>
-      </a>
-
-      <nav>
-        <ul class="navigation">
-          <li class="navigation__link navigation__link_light-theme">
-            <a class="navigation__item-link" href="./index.html">about us</a>
-          </li>
-          <li
-            class="navigation__link navigation__link_light-theme navigation__link-active"
-            aria-current="page"
-          >
-            <a class="navigation__item-link" href="./services.html">services</a>
-          </li>
-          <li class="navigation__link navigation__link_light-theme">
-            <a class="navigation__item-link" href="">team</a>
-          </li>
-          <li class="navigation__link navigation__link_light-theme">
-            <a class="navigation__item-link" href="./publications.html"
-              >publications</a
-            >
-          </li>
-          <li class="navigation__link navigation__link_light-theme">
-            <a class="navigation__item-link" href="">contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <header class="header">
-      <a class="header__logo logo-active-page" href="/">
-        <img class="logo" src="./images/logo-black.svg" alt="logo" />
-        <img class="logo__slash" src="./images/slash.svg" aria-hidden="true" />
-        <p class="page-name page-name_light-theme">publications</p>
-      </a>
-
-      <div>
-        <div class="auth-nav">
-          <ul class="auth-nav__list">
-            <li>
-              <button class="button-tab button-tab_light-theme" type="button">
-                УК
-              </button>
-            </li>
-            <li>
-              <button class="button-tab button-tab_light-theme" type="button">
-                РУ
-              </button>
-            </li>
-            <li>
-              <button class="button-tab button-tab_active" type="button">
-                EN
-              </button>
-            </li>
-          </ul>
-
-          <address class="auth-nav__address auth-nav__address_light-theme">
-            Kyiv, Mechnikova str, 14/1
-          </address>
-
-          <a
-            class="auth-nav__tel auth-nav__tel_light-theme"
-            href="tel:0800211927"
-            >0800 211 927</a
-          >
-
-          <div>
-            <a class="auth-nav__social" aria-label="facebook">
-              <svg
-                class="facebook-svg facebook-svg_light-theme"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="25"
-                fill="none"
+        
+          <div class="wrapper-publications">
+            <div class="auth-nav auth-nav-publications">
+              <ul class="auth-nav__list">
+                <li>
+                  <button class="button-tab button-tab_light-theme" type="button">
+                    УК
+                  </button>
+                </li>
+                <li>
+                  <button class="button-tab button-tab_light-theme" type="button">
+                    РУ
+                  </button>
+                </li>
+                <li>
+                  <button class="button-tab  button-tab_active" type="button">
+                    EN
+                  </button>
+                </li>
+              </ul>
+    
+              <address class="auth-nav__address auth-nav__address-publications auth-nav__address_light-theme">
+                Kyiv, Mechnikova str, 14/1
+              </address>
+    
+              <a
+                class="auth-nav__tel auth-nav__tel_light-theme"
+                href="tel:0800211927"
+                >0800 211 927</a
               >
-                <path
-                  fill="currentColor"
-                  d="M24 12.573C24 5.905 18.627.5 12 .5S0 5.905 0 12.573C0 18.6 4.388 23.594 10.125 24.5v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.791-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24.5C19.612 23.594 24 18.6 24 12.573Z"
-                />
-              </svg>
-            </a>
+    
+              <div class="wrap-auth-nav__social" >
+                <a class="auth-nav__social " aria-label="facebook">
+                  <svg
+                    class="facebook-svg facebook-svg_light-theme"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    fill="none"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M24 12.573C24 5.905 18.627.5 12 .5S0 5.905 0 12.573C0 18.6 4.388 23.594 10.125 24.5v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.791-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24.5C19.612 23.594 24 18.6 24 12.573Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+           
           </div>
-        </div>
-        <nav>
-          <ul class="navigation">
-            <li class="navigation__link navigation__link_light-theme">
-              <a class="navigation__item-link" href="./index.html">about us</a>
-            </li>
-            <li class="navigation__link navigation__link_light-theme">
-              <a class="navigation__item-link" href="./services.html"
-                >services</a
-              >
-            </li>
-            <li class="navigation__link navigation__link_light-theme">
-              <a class="navigation__item-link" href="">team</a>
-            </li>
-            <li
-              class="navigation__link navigation__link_light-theme navigation__link-active"
-            >
-              <a href="./publications.html">publications</a>
-            </li>
-            <li class="navigation__link navigation__link_light-theme">
-              <a class="navigation__item-link" href="">contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
-    <footer class="footer">
+          <div class="wrap-logo-btn">
+          <a class="header__logo header__logo-mobile " href="./index.html">
+            <img class="logo logo-publications" src="./images/logo-black.svg" alt="logo" />
+            <img
+              class="logo__slash logo__slash-publications"
+              src="./images/slash.svg"
+              aria-hidden="true"
+            />
+            <p class="page-name page-name-publications page-name_light-theme">publications</p>
+          </a>
+
+          <button
+          class="navbar-toggler navbar-toggler-publications"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+          <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarNav">
+            <button
+            class="navbar-toggler navbar-toggler-publications close-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+         
+            <span > <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m7 7 18 18M25 7 7 25" stroke="#EC6F5D" stroke-width="2"/></svg></span>
+          </button>
+
+            <ul class="navbar-nav custom-navbar-nav">
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" aria-current="page" href="./index.html"
+                  >about us</a
+                >
+              </li>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="./services.html">services</a>
+              </li>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="#">team</a>
+              </li>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link active custom-nav-link" href="./publications.html">publications</a>
+              </li>
+              <li class="nav-item custom-nav-item">
+                <a class="nav-link custom-nav-link" href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+      
+          </nav>
+    </header>
+    <body>
+      <!-- <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+
+      <main>
+        <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a short card.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg">
+            Large button
+          </button>
+        </div>
+      </main> -->
+    </body>
+
+    <!-- <footer class="footer">
       <div class="footer__line"></div>
 
       <div class="footer__wrap">
@@ -272,6 +272,12 @@
         </div>
         <p class="footer__copyright">&copy; 2021 HLEGAL Law company, LLC</p>
       </div>
-    </footer>
+    </footer> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

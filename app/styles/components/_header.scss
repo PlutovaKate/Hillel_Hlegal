@@ -56,6 +56,7 @@
   &__logo {
     display: inline-flex;
     gap: 4px;
+    margin-bottom: 30px;
 
     @media screen and (max-width: 768px) {
       margin-bottom: 30px;
@@ -138,7 +139,7 @@
   gap: 18px;
   margin-bottom: 16px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 984px) {
     margin-bottom: 30px;
   }
 
@@ -222,7 +223,7 @@
   gap: 15px;
   font-weight: 700;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 984px) {
     justify-content: flex-start;
   }
 
@@ -333,7 +334,6 @@
 .page-name {
   font-size: 36px;
   line-height: 44px;
-  align-self: flex-start;
 
   @media screen and (max-width: 600px) {
     font-size: 20px;
@@ -354,41 +354,52 @@
   width: 69px;
 }
 
-// .mobile-menu {
-//   width: 96%;
-//   margin: 0 auto;
-//   background: rgba(255, 255, 255, 1);
-//   border-radius: 12px;
-//   padding: 12px;
-//   height: 100vh;
+.mobile-menu {
+  width: 96%;
+  // margin: 0 auto;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  padding: 12px;
+  height: 100vh;
 
-//   &__button {
-//     margin-left: auto;
-//     margin-bottom: 20px;
-//   }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-//   &__list {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     gap: 15px;
-//   }
+  &__button {
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
 
-//   &__link {
-//     font-size: 24px;
-//     font-weight: 700;
-//     line-height: 29px;
-//     color: $regularColor;
-//     background: $bgColor;
-//     padding: 7px;
-//     text-align: center;
-//     border-radius: 12px;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
 
-//     &:hover {
-//       background: rgba(230, 230, 240, 1);
-//     }
-//   }
-// }
+  &__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: $regularColor;
+    background: $bgColor;
+    padding: 7px;
+    text-align: center;
+    border-radius: 12px;
+
+    &:hover {
+      background: rgba(230, 230, 240, 1);
+    }
+  }
+}
+
+.mobile-menu-background {
+  width: 100%;
+  height: 100vh;
+  background: rgba(50, 50, 100, 0.7);
+}
 
 .btn-hamburger {
   border: rgba(50, 50, 100, 1);
