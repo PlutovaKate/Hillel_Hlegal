@@ -250,11 +250,11 @@
   color: rgba(50, 50, 100, 1);
   font-weight: 700;
   line-height: 20px;
+  border-radius: 10px;
 }
 
 .nav-tabs .nav-link.active {
   background: rgba(255, 255, 255, 1);
-  border-radius: 10px;
   color: rgba(50, 50, 100, 1);
   border: 1px solid rgba(230, 230, 240, 1);
 
@@ -267,8 +267,8 @@
   width: 50%;
 
   &:hover {
-    background: rgba(245, 245, 250, 1);
     border-radius: 10px;
+    background: rgba(245, 245, 250, 1);
   }
 }
 
@@ -305,6 +305,7 @@
 
 .btn-more {
   max-width: 211px;
+  margin-top: 0px;
 }
 
 .footer__address {

@@ -147,6 +147,7 @@
   &__social:focus .facebook-svg {
     color: $accentColor;
     transition: all 0.5s;
+    cursor: pointer;
   }
 
   &__list {
