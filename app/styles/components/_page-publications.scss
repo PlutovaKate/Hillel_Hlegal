@@ -199,9 +199,11 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $regularColor;
     border-bottom: 2px solid $regularColor;
+    transition: all 0.5s;
   }
 }
 
@@ -216,9 +218,11 @@
 }
 
 .button-tab_active {
-  &:hover {
+  &:hover,
+  &:focus {
     color: $textColor;
     background: $bgColor;
+    transition: all 0.5s;
   }
 }
 
@@ -258,22 +262,27 @@
   color: rgba(50, 50, 100, 1);
   border: 1px solid rgba(230, 230, 240, 1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: rgba(245, 245, 250, 1);
+    transition: all 0.5s;
   }
 }
 
 .nav-tabs .nav-item {
   width: 50%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-radius: 10px;
     background: rgba(245, 245, 250, 1);
+    transition: all 0.5s;
   }
 }
 
 .publications__item:hover h4 {
   color: $accentColor;
+  transition: all 0.5s;
 }
 
 .publications__title {
@@ -294,7 +303,7 @@
 
 .publications {
   gap: 22px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   padding-left: 0px;
 
   &__item {
@@ -305,7 +314,7 @@
 
 .btn-more {
   max-width: 211px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 .footer__address {

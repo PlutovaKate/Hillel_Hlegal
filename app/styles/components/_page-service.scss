@@ -21,12 +21,12 @@
     max-width: 768px;
   }
 
-  @media screen and (max-width: 376px) {
-    max-width: 375px;
+  @media screen and (max-width: 506px) {
     padding: 30px 30px 0px;
   }
 
   &__title {
+    text-align: center;
     font-size: 38px;
     font-weight: 700;
     line-height: 46px;
@@ -38,7 +38,7 @@
 
     margin-bottom: 28px;
 
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 450px) {
       font-size: 30px;
       line-height: 37px;
     }
