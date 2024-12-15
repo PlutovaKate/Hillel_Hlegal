@@ -303,9 +303,7 @@
 }
 
 .publications {
-  gap: 22px;
   margin: 0 auto;
-  padding-left: 0px;
 
   &__item {
     padding-left: 0px;
@@ -320,4 +318,8 @@
 
 .footer__address {
   margin-bottom: 0px;
+}
+
+.col-3 {
+  margin: 0 auto;
 }
