@@ -1,0 +1,138 @@
+@use "./variables" as *;
+
+.section-contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1360px;
+  gap: 60px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+
+  &__info {
+    width: 100%;
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__address {
+    color: $regularMainColor;
+
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  &__tel {
+    color: $regularMainColor;
+
+    font-size: 21px;
+    line-height: 30px;
+
+    margin-bottom: 15px;
+  }
+
+  &__mail {
+    color: $regularColor;
+
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__text {
+    color: $accentColor;
+
+    font-weight: 700;
+    font-size: 12px;
+
+    text-transform: uppercase;
+  }
+}
+
+.horizontal-line {
+  height: 4px;
+  width: 100%;
+  background-color: $separatorColor;
+
+  margin: 30px 0px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 650px;
+  background: $bgColor;
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px;
+
+  &__title {
+    color: $accentColor;
+
+    font-weight: 700;
+    font-size: 30px;
+
+    margin-bottom: 30px;
+  }
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 100%;
+  color: $textColor;
+  resize: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  margin-bottom: 30px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $textColor;
+
+    margin-bottom: 15px;
+  }
+}
+
+.contact-submit {
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  background-color: $regularColor;
+  color: rgba(255, 255, 255, 1);
+
+  width: 100%;
+}

@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .header-publications {
   width: 100%;
   max-width: 1920px;
@@ -189,6 +191,7 @@
 .custom-nav-link {
   font-weight: 700;
   line-height: 20px;
+  padding-bottom: 3px;
   color: $regularColor;
 
   &.active {
@@ -204,7 +207,7 @@
   &:focus {
     color: $regularColor;
     border-bottom: 2px solid $regularColor;
-    transition: all 0.5s;
+    transition: all 0.2s;
   }
 }
 
