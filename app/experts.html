@@ -176,7 +176,7 @@
             <a class="custom-nav-link" href="./services.html">services</a>
           </li>
           <li class="navigation__link">
-            <a class="custom-nav-link" href="./experts.html">team</a>
+            <a class="custom-nav-link active" href="">team</a>
           </li>
           <li class="navigation__link">
             <a class="custom-nav-link" href="./publications.html"
@@ -184,7 +184,7 @@
             >
           </li>
           <li class="navigation__link">
-            <a class="custom-nav-link active" href="">contact</a>
+            <a class="custom-nav-link" href="">contact</a>
           </li>
         </ul>
       </nav>
@@ -257,7 +257,7 @@
               <a class="custom-nav-link" href="./services.html">services</a>
             </li>
             <li>
-              <a class="custom-nav-link" href="./experts.html">team</a>
+              <a class="custom-nav-link active" href="">team</a>
             </li>
             <li>
               <a class="custom-nav-link" href="./publications.html"
@@ -265,123 +265,84 @@
               >
             </li>
             <li>
-              <a class="active custom-nav-link" href="./contact.html"
-                >contact</a
-              >
+              <a class="custom-nav-link" href="./contact.html">contact</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main style="border: 1px solid black">
-      <section class="section-contact">
-        <div class="section-contact__info">
-          <address class="section-contact__address">
-            Kyiv, <br />
-            Mechnikova str, 14/1
-          </address>
+    <main>
+      <section class="section-experts">
+        <h1 class="section-experts__title">
+          We are used to taking responsibility and always guarantee honest,
+          timely assistance, even in situations where most are powerless.
+        </h1>
 
-          <div class="horizontal-line"></div>
-
-          <ul>
-            <li>
-              <a class="section-contact__tel" href="tel:0800211927"
-                >0800 211 927</a
-              >
-            </li>
-            <li>
-              <a
-                class="section-contact__mail"
-                href="mailto:contact@forstudy.space"
-                >contact@forstudy.space</a
-              >
-            </li>
-          </ul>
-
-          <div class="horizontal-line"></div>
-
-          <div>
-            <a
-              href="https://facebook.com"
-              class="auth-nav__social section-contact__social"
-              aria-label="Our page on Facebook"
-            >
-              <svg
-                class="facebook-svg facebook-contact"
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  fill="currentColor"
-                  d="M24 12.573C24 5.905 18.627.5 12 .5S0 5.905 0 12.573C0 18.6 4.388 23.594 10.125 24.5v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.791-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24.5C19.612 23.594 24 18.6 24 12.573Z"
-                />
-              </svg>
-
-              <span class="section-contact__text">
-                Our page <br />
-                on facebook
-              </span>
-            </a>
+        <div class="section-experts__members">
+          <div class="section-experts__member">
+            <img
+              class="section-experts__photo"
+              src="images/Alrksandrovsky-expert.webp"
+              alt="Alexander Alexandrovsky"
+            />
+            <h3 class="section-experts__name">Alexander Alexandrovsky</h3>
+            <p class="section-experts__position">Managing partner</p>
           </div>
-        </div>
 
-        <div class="contact-form">
-          <form action="#" method="post" novalidate>
-            <h3 class="contact-form__title">We would like to help you</h3>
+          <div class="section-experts__member">
+            <img
+              class="section-experts__photo"
+              src="images/Patrikov-expert.webp"
+              alt="Evgeny Patrikov"
+            />
+            <h3 class="section-experts__name">Evgeny Patrikov</h3>
+            <p class="section-experts__position">
+              Equity partner, Attorney-at-law
+            </p>
+          </div>
 
-            <div class="contact-group">
-              <label class="visually-hidden" for="name">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Name"
-                required
-                autocomplete="name"
-              />
+          <div class="section-experts__member">
+            <img
+              class="section-experts__photo"
+              src="images/Melnik-expert.webp"
+              alt="Vladislav Melnik"
+            />
+            <h3 class="section-experts__name">Vladislav Melnik</h3>
+            <p class="section-experts__position">Associate</p>
+          </div>
 
-              <label class="visually-hidden" for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
+          <div class="section-experts__member">
+            <img
+              class="section-experts__photo"
+              src="images/Binn-expert.webp"
+              alt="Sergey Binn"
+            />
+            <h3 class="section-experts__name">Sergey Binn</h3>
+            <p class="section-experts__position">Associate</p>
+          </div>
 
-            <fieldset class="contact-group">
-              <legend class="contact-group__title">How to answer you?</legend>
+          <div class="section-experts__member">
+            <img
+              class="section-experts__photo"
+              src="images/Kobzar-expert.webp"
+              alt="Oksana Kobzar"
+            />
+            <h3 class="section-experts__name">Oksana Kobzar</h3>
+            <p class="section-experts__position">
+              Equity partner, Attorney-at-law
+            </p>
+          </div>
 
-              <div class="form-group">
-                <label class="visually-hidden" for="phone">Phone number</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder="Phone number (optional)"
-                  autocomplete="tel"
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="visually-hidden" for="email">Email</label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email (optional)"
-                  autocomplete="email"
-                />
-              </div>
-            </fieldset>
-
-            <button type="submit" class="contact-submit">Send message</button>
-          </form>
+          <div class="section-experts__member">
+            <img
+              class="section-experts__photo"
+              src="images/Wolk-expert.webp"
+              alt="Julia Wolk"
+            />
+            <h3 class="section-experts__name">Julia Wolk</h3>
+            <p class="section-experts__position">Associate, Attorney-at-law</p>
+          </div>
         </div>
       </section>
     </main>

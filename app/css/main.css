@@ -2310,4 +2310,110 @@ textarea {
 
 .facebook-contact {
   color: rgb(36, 163, 255);
+}
+
+.section-experts {
+  width: 100%;
+  padding: 60px 160px;
+}
+@media screen and (max-width: 1440px) {
+  .section-experts {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-experts {
+    padding: 30px;
+  }
+}
+.section-experts__title {
+  color: rgb(240, 20, 90);
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  padding: 0px 120px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .section-experts__title {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-experts__title {
+    font-size: 30px;
+  }
+}
+.section-experts__members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .section-experts__members {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-experts__members {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.section-experts__member {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: calc((100% - 120px) / 3);
+      flex-basis: calc((100% - 120px) / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .section-experts__member {
+    -ms-flex-preferred-size: calc((100% - 120px) / 2);
+        flex-basis: calc((100% - 120px) / 2);
+  }
+}
+@media screen and (max-width: 375px) {
+  .section-experts__member {
+    width: 100%;
+  }
+}
+.section-experts__photo {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.section-experts__name {
+  font-weight: 700;
+  color: rgb(50, 50, 100);
+  margin-bottom: 5px;
+}
+.section-experts__name:hover, .section-experts__name:focus {
+  color: rgb(240, 20, 90);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.section-experts__position {
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(179, 179, 186);
 }/*# sourceMappingURL=main.css.map */
