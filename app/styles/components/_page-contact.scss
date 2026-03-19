@@ -4,19 +4,37 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1360px;
   gap: 60px;
 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
+  padding: 60px 280px;
+
+  @media screen and (max-width: 1440px) {
+    padding: 60px 180px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 30px;
+    gap: 30px;
+  }
 
   &__info {
     width: 100%;
-    max-width: 650px;
+    // max-width: 650px;
 
     display: flex;
     flex-direction: column;
+
+    // @media screen and (max-width: 1440px) {
+    //   max-width: 510px;
+    // }
   }
 
   &__address {
@@ -47,10 +65,12 @@
     flex-direction: row;
     gap: 10px;
     align-items: center;
+
+    width: fit-content;
   }
 
   &__text {
-    color: $accentColor;
+    color: $regularColor;
 
     font-weight: 700;
     font-size: 12px;
@@ -69,12 +89,18 @@
 
 .contact-form {
   width: 100%;
-  max-width: 650px;
+  // max-width: 650px;
   background: $bgColor;
   display: flex;
   flex-direction: column;
 
+  border-radius: 12px;
+
   padding: 30px;
+
+  // @media screen and (max-width: 1440px) {
+  //   max-width: 510px;
+  // }
 
   &__title {
     color: $accentColor;
@@ -135,4 +161,14 @@ textarea {
   color: rgba(255, 255, 255, 1);
 
   width: 100%;
+}
+
+.facebook-link:hover,
+.facebook-link:focus {
+  cursor: pointer;
+  color: aqua;
+}
+
+.facebook-contact {
+  color: $regularColor;
 }

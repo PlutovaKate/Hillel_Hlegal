@@ -146,7 +146,9 @@
   }
 
   &__social:hover .facebook-svg,
-  &__social:focus .facebook-svg {
+  &__social:focus .facebook-svg,
+  &__social:hover .section-contact__text,
+  &__social:focus .section-contact__text {
     color: $accentColor;
     transition: all 0.5s;
     cursor: pointer;

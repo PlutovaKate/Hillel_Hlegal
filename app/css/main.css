@@ -291,7 +291,7 @@ p {
     margin-bottom: 30px;
   }
 }
-.auth-nav__social:hover .facebook-svg, .auth-nav__social:focus .facebook-svg {
+.auth-nav__social:hover .facebook-svg, .auth-nav__social:focus .facebook-svg, .auth-nav__social:hover .section-contact__text, .auth-nav__social:focus .section-contact__text {
   color: rgb(240, 20, 90);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -2148,15 +2148,35 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 100%;
-  max-width: 1360px;
   gap: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
+  padding: 60px 280px;
+}
+@media screen and (max-width: 1440px) {
+  .section-contact {
+    padding: 60px 180px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-contact {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section-contact {
+    padding: 30px;
+    gap: 30px;
+  }
 }
 .section-contact__info {
   width: 100%;
-  max-width: 650px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2193,9 +2213,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .section-contact__text {
-  color: rgb(240, 20, 90);
+  color: rgb(36, 163, 255);
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
@@ -2210,7 +2233,6 @@ p {
 
 .contact-form {
   width: 100%;
-  max-width: 650px;
   background: rgb(245, 245, 250);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2219,6 +2241,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 12px;
   padding: 30px;
 }
 .contact-form__title {
@@ -2277,4 +2300,14 @@ textarea {
   background-color: rgb(36, 163, 255);
   color: rgb(255, 255, 255);
   width: 100%;
+}
+
+.facebook-link:hover,
+.facebook-link:focus {
+  cursor: pointer;
+  color: aqua;
+}
+
+.facebook-contact {
+  color: rgb(36, 163, 255);
 }/*# sourceMappingURL=main.css.map */
