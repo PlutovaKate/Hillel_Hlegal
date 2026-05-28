@@ -1,5 +1,3 @@
-@use "./variables" as *;
-
 .section-contact {
   display: flex;
   flex-direction: row;
@@ -27,14 +25,8 @@
 
   &__info {
     width: 100%;
-    // max-width: 650px;
-
     display: flex;
     flex-direction: column;
-
-    // @media screen and (max-width: 1440px) {
-    //   max-width: 510px;
-    // }
   }
 
   &__address {
@@ -89,7 +81,6 @@
 
 .contact-form {
   width: 100%;
-  // max-width: 650px;
   background: $bgColor;
   display: flex;
   flex-direction: column;
@@ -97,10 +88,6 @@
   border-radius: 12px;
 
   padding: 30px;
-
-  // @media screen and (max-width: 1440px) {
-  //   max-width: 510px;
-  // }
 
   &__title {
     color: $accentColor;
