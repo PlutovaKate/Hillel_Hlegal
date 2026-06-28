@@ -139,7 +139,7 @@
       </div>
     </header>
 
-    <main style="border: 1px solid black">
+    <main>
       <section class="section-contact">
         <div class="section-contact__info">
           <address class="section-contact__address">
@@ -246,6 +246,7 @@
             </fieldset>
 
             <button type="submit" class="contact-submit">Send message</button>
+            <p class="form-message" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -284,5 +285,29 @@
         <p class="footer__copyright">&copy; 2021 HLEGAL Law company, LLC</p>
       </div>
     </footer>
+
+    <script>
+      const form = document.querySelector(".contact-form form");
+      const message = document.querySelector(".form-message");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        message.textContent = "✔ Thank you! Your message has been sent.";
+        message.classList.add("show");
+
+        form.reset();
+
+        setTimeout(() => {
+          message.classList.remove("show");
+          message.textContent = "";
+        }, 3000);
+      });
+    </script>
   </body>
 </html>

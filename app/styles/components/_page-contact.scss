@@ -159,3 +159,23 @@ textarea {
 .facebook-contact {
   color: $regularColor;
 }
+
+.form-message {
+  display: block;
+  padding-top: 20px;
+  min-height: 24px;
+
+  color: $regularColor;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.form-message.show {
+  opacity: 1;
+  visibility: visible;
+}
